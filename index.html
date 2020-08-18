@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ecole</title>
+	<meta charset="utf-8">
+
+
+	<link rel="stylesheet" type="text/css" href="Publics/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Publics/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="Publics/vendor/slick/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="Publics/vendor/slick/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="Publics/css/cssFront/style.css">
+
+</head>
+<body>
+
+	<!-- Chargement -->
+    <div id="chargement">
+        <div class="spinner">
+            <i class="fa fa-spinner "></i>
+            <span>Chargement...</span>
+        </div>
+    </div>
+    <!-- /Chargement -->
+    	<div id="wrapper" class="container-fluid">
+    		<!-- header_view -->
+    		<header>
+		<nav>
+			<div id="div_logo">
+				<a href="#">
+					<img src="Publics/image/logo_transparent.png" width="50" alt="logo" class="img-responsive">
+				</a>
+			</div>
+			<div id="div_list_link">
+				<div id="titre">
+					<h2>ECOLE NATIONALE DE LA MAGISTRATURE ET DES GREFFES</h2>
+				</div>
+				<div id="div_form">
+					<form>
+						<input type="text" name="" id="text-search" placeholder="Rechercher">
+						<button type="submit">
+							<span class="fa fa-search "></span>
+						</button>
+					</form>
+				</div>
+				<ul>
+					<li class="list-item">
+						<a href="#"><span class="fa fa-home"></span></a>
+					</li>
+					<li class="list-item">
+						<a href="#" class="w_icone" data_id = "st_actualite" id="a_actualite"><span>ACTUALITES</span><span class="caret"></span></a>
+						
+					</li>
+					<li class="list-item">
+						<a href="#" class="w_icone" data_id = "st_lecole" id="a_lecole"><span>L'ECOLE</span><span class="caret"></span></a>
+						
+					</li>
+					<li class="list-item"> 
+						<a href="#" class="w_icone" data_id = "st_concours" id="a_concours"><span>CONCOURS</span><span class="caret"></span></a>
+						
+					</li>
+					<li class="list-item">
+						<a href="#" class="w_icone" data_id = "st_formation" id="a_formation"><span>FORMATION</span><span class="caret"></span></a>
+						
+					</li>
+					<li class="list-item">
+						<a href="#" class="w_icone" data_id = "st_documentation" id="a_documentation"><span>DOCUMENTATION</span><span class="caret"></span></a>
+						
+					</li>
+					<li class="list-item">
+						<a href="#" class="w_icone"><span>E-LEARNING</span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="btn_toggle">
+				<button>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</nav>
+		<div class="slide_toggle" id="st_actualite">
+			<h3>ACTUALITES</h3>
+			<a href="#" class="a_dismiss" data_id="st_actualite"><span class="fa fa-times"></span></a>
+			<div class="slide_toggle_content">
+				<div class="div_ul_l">
+					<ul>
+						<li>
+							<a href="#">formation en cours</a>
+						</li>
+					</ul>
+				</div>
+				<div class="div_ul_r">
+					<ul>
+						<li>
+							<a href="#">tous les actualités</a>
+						</li>
+					</ul>
+				</div>
+				<div class="div_ul_img">
+					<img src="Publics/image/maj3.jpg" width="150" alt="4">
+				</div>
+			</div>
+		</div>
+		<div class="slide_toggle" id="st_lecole">
+			<h3>L'ECOLE</h3>
+			<a href="#" class="a_dismiss" data_id="st_lecole"><span class="fa fa-times"></span></a>
+			<div class="slide_toggle_content">
+				<div class="div_ul_l">
+					<ul>
+						<li>
+							<a href="#">Présentation</a>
+						</li>
+						<li>
+							<a href="#">Pédagogie</a>
+						</li>
+						<li>
+							<a href="#">Historique</a>
+						</li>
+					</ul>
+				</div>
+				<div class="div_ul_r">
+					<ul>
+						<li>
+							<a href="#">Gallerie photos</a>
+						</li>
+					</ul>
+				</div>
+				<div class="div_ul_img">
+					<img src="Publics/image/13.jpg" width="150" alt="4">
+				</div>
+			</div>
+		</div>
+		<div class="slide_toggle" id="st_concours">
+			<h3>CONCOURS</h3>
+			<a href="#" class="a_dismiss" data_id="st_concours"><span class="fa fa-times"></span></a>
+			<div class="slide_toggle_content">
+				<div class="div_ul_l">
+					<ul>
+						<li>
+							<a href="#">Avis de concours</a>
+						</li>
+						<li>
+							<a href="#">Dossier à fournir</a>
+						</li>
+						<li>
+							<a href="#">Résultat</a>
+						</li>
+					</ul>
+				</div>
+				<div class="div_ul_r">
+					<ul>
+						<li>
+							<a href="#">Devenir magistrat</a>
+						</li>
+						<li>
+							<a href="#">Devenir Greffe</a>
+						</li>
+					</ul>
+				</div>
+				<div class="div_ul_img">
+					<img src="Publics/image/11.jpg" width="150" alt="4">
+				</div>
+			</div>
+		</div>
+		<div class="slide_toggle" id="st_documentation">
+			<h3>DOCUMENTATION</h3>
+			<a href="#" class="a_dismiss" data_id="st_documentation"><span class="fa fa-times"></span></a>
+			<div class="slide_toggle_content">
+				<div class="div_ul_l">
+					<ul>
+						<li>
+							<a href="#">Journal officiel</a>
+						</li>
+						<li>
+							<a href="#">Liste des ouvrages</a>
+						</li>
+						<li>
+							<a href="#">Révues périodique</a>
+						</li>
+					</ul>
+				</div>
+				<div class="div_ul_r">
+					<!-- <ul>
+						<li>
+							<a href="#">lien 1</a>
+						</li>
+						<li>
+							<a href="#">lien 1</a>
+						</li>
+						<li>
+							<a href="#">lien 1</a>
+						</li>
+					</ul> -->
+				</div>
+				<div class="div_ul_img">
+					<img src="Publics/image/11.jpg" width="150" alt="4">
+				</div>
+			</div>
+		</div>
+		<div class="slide_toggle" id="st_formation">
+			<h3>FORMATIONS</h3>
+			<a href="#" class="a_dismiss" data_id="st_formation"><span class="fa fa-times"></span></a>
+			<div class="slide_toggle_content">
+				<div class="div_ul_l">
+					<ul>
+						<li>
+							<a href="#">Devenir magistrat</a>
+						</li>
+						<li>
+							<a href="#">Formation initiale5 (Magistrature)</a>
+						</li>
+						<li>
+							<a href="#">Formation continue (Magistrature)</a>
+						</li>
+					</ul>
+				</div>
+				<div class="div_ul_r">
+					<ul>
+						<li>
+							<a href="#">Devenir greffier</a>
+						</li>
+						<li>
+							<a href="#">Formation initiale (Greffier)</a>
+						</li>
+						<li>
+							<a href="#">Formation continue (Greffier)</a>
+						</li>
+					</ul>
+				</div>
+				<div class="div_ul_img">
+					<img src="Publics/image/11.jpg" width="150" alt="4">
+				</div>
+			</div>
+		</div>
+		
+	</header>
+    		<!-- / header view  -->
+
+    		<!-- banner_view -->
+    		<div class="row" id="top">
+				<div id="baner">
+					<section class="background-cover slick" id="liste_slide_back" >    
+
+						<div class="item">
+						    <div class="slide slide--1 val_slide" style="background-image: url(Publics/uploads/8753711.jpg)">
+						       <a class="text_slide" href="#">
+						       		<h4 class="titre_slide_text">Un slide titre</h4>
+						       		<p class="parag_slide">
+						       			Lorem ipsum dolor sit amet, consectetur adipisicing el
+						       		</p>
+						       </a>
+						    </div>
+						</div>
+
+						<div class="item">
+						    <div class="slide slide--1 val_slide" style="background-image: url(Publics/uploads/7574082.jpg)">
+						       <a class="text_slide" href="#">
+						       		<h4 class="titre_slide_text">Un slide titre 2</h4>
+						       		<p class="parag_slide">
+						       			Lorem ipsum dolor sit amet, consectetur adipisicing el
+						       		</p>
+						       </a>
+						    </div>
+						</div>
+
+						<div class="item">
+						    <div class="slide slide--1 val_slide" style="background-image: url(Publics/uploads/523365maj1.jpg)">
+						       <a class="text_slide" href="#">
+						       		<h4 class="titre_slide_text">Un slide titre 3</h4>
+						       		<p class="parag_slide">
+						       			Lorem ipsum dolor sit amet, consectetur adipisicing el
+						       		</p>
+						       </a>
+						    </div>
+						</div>
+
+					 </section>
+
+ 
+ 
+				</div>
+				
+			</div>
+    		<!-- / banner_view -->
+
+    		<!-- actu -->
+    		<section class="ftco-section" id="actualites">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="heading-section mb-4"><span>Actualités</span></h2>
+					</div>
+				</div>						 
+				<div class="row">
+					<div class="col-md-4 unite-actus">
+						<h2 class="heading-section">
+							<small>Rounded Image</small>
+						</h2>
+						<div class="image-wrap">
+							<img src="Publics/image/CNAPS.jpg" alt="Round Image" class="img-responsive">
+						</div>
+						<div class="actus-footer">
+							<div class="date_actus">
+								<b>1996 - 1999. Ancien emplacement Batiment INPF Ivato</b>
+							</div>
+							<div class="detail_actus">
+								<p>
+									Details de l'actus Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 unite-actus">
+						<h2 class="heading-section">
+							<small>Rounded Image</small>
+						</h2>
+						<div class="image-wrap">
+							<img src="Publics/image/CNAPS.jpg" alt="Round Image" class="img-responsive">
+						</div>
+						<div class="actus-footer">
+							<div class="date_actus">
+								<b>1996 - 1999. Ancien emplacement Batiment INPF Ivato</b>
+							</div>
+							<div class="detail_actus">
+								<p>
+									Details de l'actus Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 unite-actus">
+						<h2 class="heading-section">
+							<small>Rounded Image</small>
+						</h2>
+						<div class="image-wrap">
+							<img src="Publics/image/CNAPS.jpg" alt="Round Image" class="img-responsive">
+						</div>
+						<div class="actus-footer">
+							<div class="date_actus">
+								<b>1996 - 1999. Ancien emplacement Batiment INPF Ivato</b>
+							</div>
+							<div class="detail_actus">
+								<p>
+									Details de l'actus Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="listerActualiter">
+					<h3>
+						<a href="index.php?action=tousLesActus">voir tous les actualités</a>
+					</h3>
+				</div>
+			</div>
+	</section>
+    		<!-- / actu -->
+
+    		<!-- ecole -->
+    		<div class="container" id="ecole">
+	<div id="ecole_content_M">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titre-part">
+			<h2 id="titre-ecole"><span>L'ECOLE</span></h2>
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="ecole-content">
+			<div class="row">
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<img src="Publics/image/maj8.jpg" id="image-ecole"  alt="" class="img img-responsive">
+				</div>
+				<div class="col-md-8 col-sm-12 col-xs-12 ">
+					<section id="text-ecole">
+						<p class="paragraphe">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<p class="paragraphe">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<p class="paragraphe">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    		<!-- / ecole -->
+
+    		<!-- formation  -->
+    		<section class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-8">
+				<div class="row formation-titre" id="row_focus">
+					<h3><span>FOCUS</span></h3>
+				</div>
+				<div class="row block_row_unit_form">
+					<div class="col-md-6 col-ms-6">
+						<div class="sous-titre-form">
+							<h4>REFORMES DES CONCOURS ET CE QU'IL FAUT SAVOIR :</h4>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+					<div class="col-md-6 col-ms-6">
+						<div class="image-formation">
+							<div style="background-image: url(Publics/image/image-1.jpg);">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row block_row_unit_form">
+					<div class="col-md-6 col-ms-6">
+						<div class="sous-titre-form">
+							<h4>REFORMES DES CONCOURS ET CE QU'IL FAUT SAVOIR :</h4>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+					<div class="col-md-6 col-ms-6">
+						<div class="image-formation">
+							<div style="background-image: url(Publics/image/image-2.jpg);">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="link-inscription">
+					<a href="#" class="btn btn-info btn-md" data-toggle="modal" data-target="#zoomOutIn">Consulter les offres de formations et s'inscrire</a>
+					<a href="#" class="btn btn-info btn-md" data-toggle="modal" data-target="#zoomOutIn2">Localisation de l'école</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4">
+				<div class="row formation-titre" id="row_events">
+					<h3><span>LES EVENEMENTS</span></h3>
+				</div>
+				<div class="row">
+					<div id="video-container">
+					 	<div class="video_wrapper video_wrapper_full js-videoWrapper unite-video">
+							<iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/G4cJ4wviwS8?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+							<button class="videoPoster js-videoPoster"></button>
+						</div>
+						<div class="video_wrapper video_wrapper_full js-videoWrapper unite-video">
+							<iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/G4cJ4wviwS8?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+							<button class="videoPoster js-videoPoster"></button>
+						</div>
+						<div class="video_wrapper video_wrapper_full js-videoWrapper unite-video">
+							<iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/G4cJ4wviwS8?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+							<button class="videoPoster js-videoPoster"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    		<!-- /formation -->
+
+    		<!-- doc -->
+    		<div class="container" id="documentation">
+	<div class="row">
+		<div class="col-lg-12">
+			<h2 class="heading-section mb-4"><span>Documentation</span></h2>
+		</div>
+	</div>	
+	<div id="docs" class="row">
+		<div class="col-lg-3 col-md-3 col-sm-6">
+			<div class="unite-docs">
+				<div class="cover-docs" style="background-image: url(Publics/image/revu1.jpg) ;"></div>
+				<div class="link-docs">
+					<a href="#">1000 TEXTS</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6">
+			<div class="unite-docs">
+				<div class="cover-docs" style="background-image: url(Publics/image/revu2.jpg) ;"></div>
+				<div class="link-docs">
+					<a href="#">2000 TEXTS</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6">
+			<div class="unite-docs">
+				<div class="cover-docs" style="background-image: url(Publics/image/revu3.jpg) ;"></div>
+				<div class="link-docs">
+					<a href="#">CATALOGUE </a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6">
+			<div class="unite-docs">
+				<div class="cover-docs" style="background-image: url(Publics/image/revu4.jpg) ;"></div>
+				<div class="link-docs">
+					<a href="#">JOURNAL OFFICIEL</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container" id="cont_liste_docs">
+	
+</div>
+    		<!-- /doc -->
+
+    		<!-- foot -->
+    		<footer class="nb-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-6  col-xs-6">
+					<div class="footer-info-single">
+						<h2 class="title">ACTUALITES</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Formaton en cours</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Toutes les actualités</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Sitemap</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6  col-xs-6">
+					<div class="footer-info-single">
+						<h2 class="title">L'ECOLE</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Présentation</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Pédagogie</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Historique</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Gallerie photo</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6  col-xs-6">
+					<div class="footer-info-single">
+						<h2 class="title">CONCOURS</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Avis de concours</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Dossiers à fournir</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Résultat</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Devenir magistrat</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Devenir greffier</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6  col-xs-6">
+					<div class="footer-info-single">
+						<h2 class="title">DOCUMENTATIONS</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Journal officiel</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Listest des ouvrages</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Révus périodique</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Devenir magistrat</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Devenir greffier</a></li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6  col-xs-6">
+					<div class="footer-info-single">
+						<h2 class="title">FORMATIONS</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Devenir magistrat</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Formation initiale</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Formation continue</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Devenir greffier</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Formation initiale</a></li>
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>Formation continue</a></li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6  col-xs-6">
+					<div class="footer-info-single">
+						<h2 class="title">E-LEARNING</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" title=""><i class="fa fa-angle-double-right"></i>E-learning</a></li>
+						</ul>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ve
+							</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<p>Copyright © 2020 ECOLE NATIONALE DE LA MAGISTRATURE ET DES GREFFES.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+    		<!-- /foot -->
+		
+		<!-- Modal effect 6  zoomOutIn -->
+
+			<div class="modal fade  " id="zoomOutIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<div class="form-group">
+											<label>Nom</label>
+											<input type="text"  class="form-control" placeholder="Votre nom" name="">
+										</div>
+										<div class="form-group">
+											<label>Prénom</label>
+											<input type="text"  class="form-control" placeholder="Votre nom" name="">
+										</div>
+										<div class="form-group">
+											<label>Matricule</label>
+											<input type="text"  class="form-control" placeholder="Votre matricule" name="">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<div class="form-group">
+											<label>Poste actuel</label>
+											<input type="text"  class="form-control" placeholder="Votre poste actuel" name="">
+										</div>
+										<div class="form-group">
+											<label>Duréé de fomration</label>
+											<select class="form-control">
+												<option>Trimestriel</option>
+												<option>Semestriel</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label>Type de fortmation</label>
+											<select class="form-control">
+												<option>Formation continue</option>
+												<option>Formation initiale</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12">
+										<div class="form-group">
+											<input type="submit"  class="btn btn-primary btn-md" value="Envoyer ma candidature">
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- / Modal effect 6  zoomOutIn -->
+		<!-- Modal effect 6  zoomOutIn2 -->
+
+			<div class="modal fade  " id="zoomOutIn2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title">Localisation</h3>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<div class="modal-body">
+							<div>
+								<!-- <div id="map">
+									Ici s'affichera la carte
+								</div> -->
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.802441684921!2d47.51911301503633!3d-18.905218612141482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07e03b8c599e7%3A0xe1d3898f457ed3ce!2sENMG!5e1!3m2!1sfr!2smg!4v1592916992681!5m2!1sfr!2smg" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0" style="width: 100%;height: 100%"></iframe>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- / Modal effect 6  zoomOutIn2 -->
+	</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+	<script src="Publics/vendor/slick/slick/slick.min.js"></script>
+	<script src="Publics/js/jsFront/preload.js"></script>
+	<script src="Publics/js/jsFront/prettify.js"></script>
+	<script src="Publics/js/jsFront/jquery.slimscroll.js"></script>
+    <script type="text/javascript">
+			$('#baner .slick').slick({
+				draggable: true,
+			    arrows: true,
+			    dots: true,
+			    fade: true,
+			    speed: 1500,
+			    autoplay: true,
+				autoplaySpeed: 5000,
+			    infinite: true,
+			    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+			    touchThreshold: 100
+			});
+
+			// docs
+
+			$('#docs').slick({
+				arrows: true,
+				dots: true,
+				infinite: true,
+				autoplay: true,
+				infinite: true,
+				autoplaySpeed: 5000,
+				slidesToShow: 3,
+				slidesToScroll: 3 ,
+				responsive: [
+			    {
+			      breakpoint: 1024,
+			      settings: {
+			        slidesToShow: 3,
+			        slidesToScroll: 3,
+			        infinite: true,
+			       	dots:true  
+			      }
+			    },
+			    {
+			      breakpoint: 992,
+			      settings: {
+			        slidesToShow: 3,
+			        slidesToScroll: 3 ,
+			        dots:true  
+			      }
+			    },
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 2 ,
+			        dots:true  
+			      }
+			    } ,
+			     {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1,
+			        dots:true  
+			      }
+			    } ,
+			    {
+			      breakpoint: 400,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1 ,
+			        dots:true  
+			      }
+			    } ,
+			    {
+			      breakpoint: 360,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1 ,
+			        dots:true  
+			      }
+			    }] 
+			});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../vendor/font/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../../vendor/font/Roboto-Light.ttf');
+}
+
+body {
+  position: relative;
+  font-size: 15px;
+  font-family: 'Roboto-Light';
+  background-color: #EFEFEF;
+  word-wrap: break-word;
+}
+
+ul {
+  list-style: none ;
+  padding: 0px;
+  margin: 0px;
+}
+#chargement {
+  line-height: 100vh;
+  text-align: center;
+}
+
+#chargement i, #chargement span {
+  vertical-align: middle;
+}
+
+#chargement .fa {
+  font-size: 22px;
+  animation: spinner 1s linear infinite;
+}
+
+.chargement .fa {
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  form {}
+  to {
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotateZ(360deg);
+  }
+}
+
+#wrapper {
+  height: 100%;
+  opacity: 0;
+  padding-left: 0px;
+}
+
+#wrapper.container-fluid {
+  padding-right: 0px;
+  padding-top: 140px;
+ position: relative ;
+  z-index: auto ;
+}
+
+
+
+
+
+

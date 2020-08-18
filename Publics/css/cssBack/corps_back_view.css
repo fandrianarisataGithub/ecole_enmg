@@ -1,0 +1,103 @@
+
+#gauche {
+  background: #272727 ;
+  width: 235px;
+  position: fixed;
+  left: 0px;
+  height: 100vh ;
+}
+
+#wrapper.container-fluid {
+  overflow: hidden ;
+  margin-left: 235px;
+}
+
+#corps_actus,#corps_banner,#corps_documentation,#corps_concours,#corps_l_ecole,#corps_formation {
+  display: none;
+
+}
+
+.unite-gallerie.col-md-3 {
+  padding: 0px;
+}
+
+#gauche #back_logo{
+  width: 100%;
+  height: 50px;
+}
+
+#btn-toggle{
+  display: none ;
+}
+
+#val_logo,#val_logo:hover {
+  display: inline-block;
+  width: 235px;
+  height: 50px;
+  text-align: center;
+  border-bottom :1px solid #ffff ;
+  text-decoration : none ;
+}
+
+#val_logo span {
+  position: relative;
+  top: 15px;
+  color: #fff ;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none ;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul li {
+  margin-top: 5px;
+  background: #3e3c3c ;
+  height: 50px;
+  text-align: center
+}
+
+nav ul li a{
+  display: inline-block ;
+  width: 235px;
+  height: 50px;
+  background: transparent;
+  transition: background 1s ;
+  text-decoration: none ;
+}
+
+nav ul li a:hover {
+  display: inline-block ;
+  width: 235px;
+  height: 50px;
+  text-decoration: none ;
+  background: #272727;
+}
+
+nav ul li a span {
+  position: relative;
+  top: 15px;
+  color: #ffff ;
+  /*letter-spacing: 0.3em;*/
+  letter-spacing: normal;
+  transition: letter-spacing 0.5s ;
+  font-weight: 600;
+}
+
+nav ul li a:hover span {
+  letter-spacing: 0.3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+

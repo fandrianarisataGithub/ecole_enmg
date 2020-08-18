@@ -1,0 +1,140 @@
+#footer1{
+  background: #180BE3 ;
+  padding: 30px;
+}
+
+.maps {
+  height: 250px;
+}
+
+#footer2 {
+  margin-top: 30px;
+}
+
+#footer2 ul {
+  width: 450px;
+  margin: auto;
+}
+
+#contact-rapide ul li {
+  margin-top: 25px;
+}
+
+#contact-sociaux ul li{
+  margin-top: 5px;
+}
+
+#contact-rapide ul li:first-child , #contact-sociaux ul li:first-child {
+  margin-top: 0px;
+}
+ 
+#contact-rapide ul li b {
+  display: block ;
+  width: 100px;
+  color:  #180BE3 ;
+}
+
+#contact-rapide ul li span{
+  font-weight: 600;
+  font-size: 13px;
+}
+
+#contact-sociaux ul li a {
+  display: inline-block ;
+  background: #59a5ec ;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  text-align : center ;
+}
+
+#contact-sociaux ul li a .fa {
+  color: white ;
+  position: relative ;
+  top: 8px;
+  font-size: 20px;
+  transform: scale(0.9);
+  transition: font-size 1s , transform 1s;
+  
+}
+
+#contact-sociaux ul li a:hover .fa {
+ font-size: 23px;
+  transform: scale(1);
+}
+
+#footer3 {
+  margin-top: 10px;
+  text-align: center ;
+  background: #180BE3 ;
+}
+
+#footer3 p {
+  margin-top: 10px;
+  color: white ;
+}
+
+#btn-top{
+  display: inline-block;
+  background: #272727;
+  box-shadow: 1px 1px 3px white ;
+  color:#fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  text-align:center;
+  position: fixed ;
+  right: 50px;
+  bottom: 20px;
+  margin-right:20px;
+}
+
+#btn-top .fa {
+  position: relative;
+   top: 10px;
+  font-weight: 800px;
+  font-size: 700;
+  font-size: 23px;
+}
+
+@media all and (max-width:768px) {
+  #footer2 ul {
+    width: 100%;
+    margin: auto;
+  }
+  #contact-rapide ul li {
+  margin-top: 5px;
+}
+
+#contact-sociaux ul li{
+  margin-top: 2px;
+  margin-left: 37px;
+  display: inline-block ;
+}
+
+#contact-rapide ul li:first-child , #contact-sociaux ul li:first-child {
+  margin-top: 5px;
+}
+ 
+#contact-rapide ul li b {
+  width: 100px;
+  font-size: 12px;
+}
+
+#contact-rapide ul li span{
+  font-weight: 600;
+  font-size: 13px;
+}
+
+#footer3 {
+  margin-top: 5px;
+}
+
+#footer3 p {
+  margin-top: 5px;
+ font-size: 13px;
+}
+
+}
+
+

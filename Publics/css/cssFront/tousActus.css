@@ -1,0 +1,41 @@
+body > .container-fluid {
+  padding: 0px;
+}
+header {
+  width: 100%;
+}
+#top-tpusles-articles {
+	margin-top: 250px;
+}
+img{
+  margin:0.4rem;
+}
+.container{
+  padding:1rem;
+  padding-left:1.5rem;
+}
+body{
+  background-color:white;
+}
+#actualites{
+  margin-top: 50px;
+}
+
+.image-wrap {
+  transform: scale(1);
+  transition: transform 0.4s ;
+}
+
+.unite-actus:hover .image-wrap {
+  transform: scale(0.98);
+}
+
+#listerActualiter h3 a{
+	float: right ;
+}
+
+#portion-foot {
+  margin-top: 40px;
+  background-color: red ;
+}
+

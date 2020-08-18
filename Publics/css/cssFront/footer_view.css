@@ -1,0 +1,80 @@
+
+.maps {
+  height: 250px;
+}
+
+.nb-footer{
+  background: rgba(0,0,0,.8);
+}
+
+footer > .container > .row > div.col-sm-12:after {
+  content: "";
+  display: block ;
+  width: 100%;
+  height: 2px;
+  background: #b9baba ;
+  margin-top: 50px;
+}
+
+.nb-footer .list-unstyled li a {
+  color: rgba(255,255,255,0.8) ;
+  font-size: 13px;
+}
+.nb-footer .list-unstyled li a:hover {
+  color: rgba(255,255,255,1) ;
+  
+}
+.nb-footer .list-unstyled li a i{
+  margin-right: 5px;
+}
+.nb-footer .list-unstyled li a:hover i{
+  margin-right: 0px;
+  margin-right: 10px;
+  transition: all 0.5s linear ;
+}
+
+h2.title {
+  font-size: 17px;
+}
+
+footer > .container:after {
+  content: "";
+  display: block ;
+  width: 100%;
+  height: 2px;
+  background: #b9baba ;
+  margin-top: 20px;
+}
+.copyright {
+	margin-top: 20px;
+}
+.copyright p{
+	text-align: center;
+	color: rgba(255,255,255,0.8) ;
+  font-size: 13px;
+}
+
+@media all and (max-width:992px) {
+  h2.title {
+  font-size: 17px;
+     width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  .footer-info-single ul {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-info-single p {
+    width: 180px;
+    text-align: justify ;
+     margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media all and (max-width:480px) {
+  footer .col-xs-6 {
+    width: 100%;
+  }
+}

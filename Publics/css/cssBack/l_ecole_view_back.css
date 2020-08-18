@@ -1,0 +1,138 @@
+
+
+#corps_l_ecole form.row {
+  padding: 0px;
+  margin: 0px;
+  padding-top: 20px;
+}
+
+#image_l_ecole {
+  display: block ;
+  width: 250px;
+  margin: auto ;
+  margin-top: 0px;
+  height: 200px;
+  background: #272727 ;
+}
+
+#corps_l_ecole form.row .col-md-4 .from-group {
+   display: block ;
+  width: 250px;
+  margin: auto ;
+  margin-top: 20px;
+  text-align: center ;
+}
+#corps_l_ecole form.row .col-md-4 .from-group .btn-info {
+  border-radius: 0px;
+  width: 100%;
+  background-color: #272727 ;
+  border-color: transparent;
+}
+#corps_l_ecole form.row .col-md-4 .from-group .btn-info:focus,#corps_l_ecole form.row .col-md-4 .from-group .btn-info:visited {
+  background-color: #272727 ;
+  border-color: transparent;
+  box-shadow: none ;
+}
+
+#corps_l_ecole form.row .col-md-8{
+  padding-bottom: 0px;
+}
+
+#corps_l_ecole form.row .col-md-8 .form-group {
+  margin-top: 0px;
+  height: auto ;
+  margin-bottom: 0px;
+}
+#corps_l_ecole form.row .col-md-8 textarea.form-control {
+  resize: none ;
+  height: 255px;
+  border-radius: 0px;
+  color: #272727 ;
+  border: 1px solid #272727 ;
+}
+
+#corps_l_ecole form.row .col-md-8 textarea.form-control:focus{
+  box-shadow: none ;
+  border-color: #272727 ;
+}
+
+#corps_l_ecole form.row .col-md-12 {
+  text-align: end ;
+}
+
+#corps_l_ecole form.row .col-md-12 .form-group {
+  margin-top: 20px;
+}
+
+#corps_l_ecole form.row .col-md-12 .form-group .btn-primary {
+  width: 200px;
+  border-radius: 0px;
+  border-color: transparent ;
+}
+
+#corps_l_ecole form.row .col-md-12 .form-group .btn-primary:focus,#corps_l_ecole form.row .col-md-12 .form-group .btn-primary:visited {
+  border-radius: 0px;
+  border-color: transparent ;
+  box-shadow: none ;
+}
+
+#liste_ecole {
+  padding: 0px;
+  margin-left: 0px;
+  border-top: 1px solid #272727 ;
+}
+
+#liste_ecole .col-md-4 {
+  text-align: center ;
+}
+
+#image_l_ecole-show {
+  display: block ;
+  width: 250px;
+  margin: auto ;
+  margin-top: 20px;
+  height: 200px;
+  background: #272727 ;
+}
+
+#liste_ecole .col-md-8 p {
+  resize: none ;
+  height: 200px;
+  border-radius: 0px;
+  color: #272727 ;
+  text-align: justify ;
+  padding-right: 20px;
+  margin-top: 20px;
+  overflow-y: scroll ;
+}
+#liste_ecole .col-md-12 {
+  text-align: end ;
+}
+#liste_ecole .col-md-12 .form-group {
+  margin-top: 20px;
+}
+
+#modifier_ecole ,#modifier_ecole:focus ,#modifier_ecole:visited {
+  width: 200px;
+  border-radius: 0px;
+  border-color: transparent ;
+  margin-right:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

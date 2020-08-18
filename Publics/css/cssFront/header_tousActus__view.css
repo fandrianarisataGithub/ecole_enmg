@@ -1,0 +1,461 @@
+
+header {
+  position: fixed ;
+  width: 100%;
+  background-color: #fff ;
+  box-shadow: 0px 3px 4px #ccc;
+  z-index: 12000;
+}
+
+#top-header {
+  display: block ;
+  width: 1200px;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+.link_logo {
+  display: inline-block;
+  width: 20%;
+}
+
+.link_logo img{
+  width: 100%;
+}
+
+#titre_search{
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+  margin-left: -4px;
+  margin-top: 40px;
+}
+
+#top-header h3 {
+  display: block ;
+  margin: 0px;
+  text-align: center ;
+}
+
+#top-header form {
+  width: 50%;
+  margin-top: 30px;
+  text-align: end;
+  float: right ;
+}
+#form-search .input-group input {
+  height: 30px;
+  border: 1px solid rgba(24,11,227,0.7);
+  color: #180be3 ;
+}
+
+#form-search .input-group input:focus {
+   border: 1px solid rgba(24,11,227,1);
+  box-shadow : 1px 1px 3px rgba(24,11,227,1) ;
+}
+
+#form-search .input-group input::-webkit-input-placeholder { /* Chrome */
+  color: #180be3;
+}
+#form-search .input-group input:-ms-input-placeholder { /* IE 10+ */
+  color: #180be3;
+}
+#form-search .input-group input::-moz-placeholder { /* Firefox 19+ */
+  color: #180be3;
+  opacity: 1;
+}
+#form-search .input-group input:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #180be3;
+  opacity: 1;
+}
+
+#form-search .input-group-addon {
+  background-color: #180be3 ;
+  color: #fff ;
+  border-color: #180be3;
+}
+
+.navbar-inverse {
+  border: none ;
+  display: block;
+  width: 1200px;
+  margin-left: auto ;
+  margin-right: auto;
+  margin-bottom: 2px;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+nav .container-fluid{
+  padding: 0px;
+}
+
+#myNavbar {
+  height: auto ;
+  display: inline-block;
+  width: 80%;
+  margin-left: -4px;
+  float: right;
+  margin: 0px;
+  padding-right: 0px;
+}
+
+ul.navbar-nav{
+  margin: 0px;
+  padding: 0px;
+  float: right;
+}
+
+ul.nav li{
+  text-align: end;
+}
+
+.navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .active > a:visited, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  color: #180BE3;
+  background-color: transparent ;
+  font-weight : 500;
+  position: relative;
+  font-size: 12px;
+}
+#link span {
+  position: relative;
+  bottom: 6px;
+}
+.navbar-inverse .navbar-nav > li > a,.navbar-inverse .navbar-nav > li > a:visited,.navbar-inverse .navbar-nav > li > a:hover ,.navbar-inverse .navbar-nav > li > a:focus {
+    color: #180BE3;
+   font-size: 14px;
+  font-weight : 800 ;
+  position: relative;
+  top: 5px;
+}
+
+.caret{
+  color: #180BE3;
+  position: relative;
+  left: 5px;
+  display: inline-block ;
+}
+
+#e_learning .caret {
+  color: white ;
+}
+
+.navbar-inverse .navbar-nav > .active > a.link::after {
+  content: "" ;
+  display: block ;
+  background: #180be3 ;
+  position: relative;
+  top: 15px;
+  width: 0%;
+  height: 5px;
+  -webkit-transition: width .3s ;
+  -o-transition: width .3s ;
+  transition: width .3s ;
+}
+
+.navbar-inverse .navbar-nav > li > a.link::after {
+  content: "" ;
+  display: block ;
+  background: #180be3 ;
+  position: relative;
+  top: 22px;
+  width: 0%;
+  height: 5px;
+  -webkit-transition: width .3s ;
+  -o-transition: width .3s ;
+  transition: width .3s ;
+}
+
+.navbar-inverse .navbar-nav > .active > a.link:hover::after,.navbar-inverse .navbar-nav > li> a.link:hover::after {
+  width: 100%;
+}
+#e_learning a {
+  position: relative;
+  top: 5px;
+  background: #180be3;
+  color: #fff;
+  border-radius: 25px;
+}
+
+@media all and (max-width:1199px) {
+  #top-header{
+    width: 768px;
+    padding-top: 10px;
+  }
+  #top-header form {
+    margin-top: 10px;
+  }
+  #titre_search{
+    margin-top: 0px;
+  }
+  .navbar-inverse{
+    width: 768px;
+  }
+  
+  #myNavbar{
+    width: 100%;
+    padding: 0px;
+  }
+  
+  ul.navbar-nav {
+    width: 100%;
+    margin: 0px;
+  }
+  
+  .navbar-inverse .navbar-nav > .active{
+    display: inline-block ;
+  }
+  .navbar-inverse .navbar-nav > li {
+     display: inline-block ;
+  }
+  .navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > li > a{
+    font-size: 12px;
+  }
+  
+  .navbar-inverse .navbar-nav > li > a,.navbar-inverse .navbar-nav > li > a:visited,.navbar-inverse .navbar-nav > li > a:hover ,.navbar-inverse .navbar-nav > li > a:focus {
+    color: #180BE3;
+     font-size: 12px;
+    font-weight : 800 ;
+    position: relative;
+    top: 5px;
+  }
+  .navbar-inverse .navbar-nav > .active > a.link:hover::after,.navbar-inverse .navbar-nav > li> a.link:hover::after {
+    width: 90%;
+  }
+}
+
+@media all and (max-width:767px) {
+  
+  header {
+    transition: height 0.2s ;
+  }
+  #top-header form {
+    width: 100%!important;
+  }
+  #top-header{
+    width: 480px;
+    padding-top: 10px;
+  }
+  
+  .link_logo {
+      display:block;
+      margin: auto;
+      width: 50%;
+    }
+  
+    #titre_search{
+      display:block;
+      margin: auto;
+      margin-top: 10px;
+  }
+  
+  #titre_search h3{
+    font-size: 15px;
+  }
+  
+  #top-header form {
+  width: 50%;
+  margin-top: 20px;
+  text-align: end;
+  float: left ;
+}
+  
+  #form-search {
+    float: left;
+  }
+  #myNavbar {
+  height: auto ;
+  display: block;
+  width: 100%;
+  float: right;
+  margin: 0px;
+  padding-right: 0px;
+}
+  .navbar-inverse{
+    width: 480px;
+    height: auto;
+  }
+  
+  ul.navbar-nav {
+   height: auto;
+   position: absolute;
+    /*atao none refa animation*/
+    display: none;
+    background-color: #fff ;
+    box-shadow: 1px 1px 12px #555;
+    width: 100%;
+    padding-bottom: 10px;
+    transition: display 1s;
+  }
+  
+  .navbar-inverse .navbar-nav > .active,.navbar-inverse .navbar-nav > li{
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: end;
+  }
+  .navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > li > a{
+    font-size: 12px;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+
+  }
+  
+  .navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > li > a:hover{
+    font-size: 12px;
+  }
+  .navbar-inverse .navbar-nav > li > a{
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  .navbar-toggle,.navbar-toggle:hover,.navbar-toggle:visited,.navbar-toggle:focus{
+    background-color: #180be3 !important;;
+    border-color: #180be3 !important;
+   margin-top: -30px;
+    height: 30px;
+    padding-top: 7px;
+  }
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: transparent !important;
+    box-shadow: none;
+}
+  ul.navbar-nav {
+    margin-top: 0px;
+  }
+  
+}
+
+@media all and (max-width:479px) {
+  /*style dans boot*/
+    .navbar-inverse .navbar-toggle {
+    border-color: #180be3;
+      position: relative;
+}
+.navbar-toggle,.navbar-toggle:hover,.navbar-toggle:focus {
+    background-color: #180be3 !important;
+   border-color: #180be3;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+
+  /*fin*/
+  
+  header {
+    transition: height 1S ;
+    height: 250px;
+  }
+  
+  #top-header{
+    width: 320px;
+    padding-top: 10px;
+  }
+  #top-header form {
+   position: relative ;
+  right: 30px;
+  }
+  
+  .link_logo {
+      display:block;
+      margin: auto;
+      width: 50%;
+    }
+  
+    #titre_search{
+      display:block;
+      margin: auto;
+      margin-top: 10px;
+  }
+  
+  #titre_search h3{
+    font-size: 13px;
+  }
+  
+  #top-header form {
+  width: 100%;
+  margin-top: 10px;
+  text-align: end;
+  float: left ;
+}
+  
+  #form-search {
+    float: left;
+  }
+  #myNavbar {
+  height: auto ;
+  display: block;
+  width: 100%;
+  float: right;
+  margin: 0px;
+  padding-right: 0px;
+}
+  .navbar-inverse{
+    width: 320px;
+    height: auto;
+  }
+  
+  ul.navbar-nav {
+   height: auto;
+   position: absolute;
+    /*atao none refa animation*/
+    display: none;
+    background-color: #fff ;
+    box-shadow: 1px 1px 12px #555;
+    width: 100%;
+    padding-bottom: 10px;
+    transition: display 1s;
+  }
+  
+  .navbar-inverse .navbar-nav > .active,.navbar-inverse .navbar-nav > li{
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: end;
+  }
+  .navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > li > a{
+    font-size: 12px;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > li > a:hover{
+    font-size: 12px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

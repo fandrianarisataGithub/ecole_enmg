@@ -1,0 +1,195 @@
+#actualites{
+  margin-top: 80px;
+}
+#actualites >.container>.row>.col-lg-12>h2 {
+  text-align: center ;
+}
+#actualites >.container>.row>.col-lg-12>h2 span{
+  color: #180be3 ;
+}
+#actualites >.container>.row>.col-lg-12>h2:after {
+  display: inline-block ;
+  content: "" ;
+   width: 40%;
+  position: absolute ;
+  height: 2px;
+  background: #b9baba ;
+  right: 0;
+  margin-top: 20px;
+}
+#actualites >.container>.row>.col-lg-12>h2:before {
+  display: inline-block ;
+  content: "" ;
+   width: 40%;
+  position: absolute ;
+  height: 2px;
+  background: #b9baba ;
+  left: 0;
+  margin-top: 20px;
+}
+.image-wrap {
+  transform: scale(1);
+  transition: transform 0.2s ;
+}
+
+.unite-actus:hover .image-wrap {
+  transform: scale(0.98);
+  box-shadow : 1px 1px 5px grey ; 
+}
+
+#listerActualiter h3 a ,#listerDocument h3 a{
+	float: right ;
+	margin-bottom: 30px;
+  font-size:17px;
+}
+
+@media all and (max-width:991px) {
+  #actualites {
+    margin-top: 150px;
+  }
+	.unite-actus {
+		margin-top: 30px;
+	}
+	.unite-actus > .image-wrap{
+		text-align: center ;
+    width: 75%;
+    margin: auto;
+	}
+	.unite-actus > .image-wrap .img-responsive {
+		margin-left: auto ;
+		margin-right: auto ;
+		display: block ;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+  .unite-actus > .actus-footer {
+    width: 65%;
+    margin: auto ;
+  }
+  .heading-section {
+    width: 65%;
+    margin: auto ;
+    text-align: center ;
+  }
+   #listerActualiter{
+      margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+  }
+  #listerActualiter h3 , #listerDocument h3 {
+    text-align: center ;
+  }
+  #listerActualiter h3 a, #listerDocument h3 a {
+    float: none;
+}
+}
+
+@media all and (max-width:768px) {
+ #actualites {
+    margin-top: 100px;
+  }
+  #actualites >.container>.row>.col-lg-12>h2 {
+  text-align: center ;
+    font-size: 23px ;
+}
+#actualites >.container>.row>.col-lg-12>h2 span{
+  color: #180be3 ;
+  position: relative ;
+  top: 4px;
+}
+#actualites >.container>.row>.col-lg-12>h2:after {
+  display: inline-block ;
+  content: "" ;
+   width: 30%;
+  position: absolute ;
+  height: 2px;
+  background: #b9baba ;
+  right: 0;
+  margin-top: 20px;
+}
+#actualites >.container>.row>.col-lg-12>h2:before {
+  display: inline-block ;
+  content: "" ;
+   width: 30%;
+  position: absolute ;
+  height: 2px;
+  background: #b9baba ;
+  left: 0;
+  margin-top: 20px;
+}
+  .unite-actus {
+		margin-top: 0px;
+	}
+  .unite-actus h2 {
+    text-align: center ;
+  }
+  .unite-actus > .image-wrap .img-responsive {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+  .actus-footer {
+     margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  #listerActualiter{
+      margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+  }
+  #listerActualiter h3 , #listerDocument h3 {
+    text-align: center ;
+  }
+   #listerActualiter h3 a {
+    text-align: center ;
+     font-size: 15px;
+     white-space: nowrap;
+  }
+  #listerActualiter h3 a, #listerDocument h3 a {
+    float: none;
+}
+}
+@media all and (max-width:480px) {
+  #actualites {
+    margin-top: 20px;
+  }
+  #actualites >.container>.row>.col-lg-12>h2 {
+  text-align: center ;
+    font-size: 22px;
+}
+#actualites >.container>.row>.col-lg-12>h2 span{
+  color: #180be3 ;
+  position: relative ;
+  top: 5px;
+  
+}
+#actualites >.container>.row>.col-lg-12>h2:after {
+  display: inline-block ;
+  content: "" ;
+   width: 35%;
+  position: absolute ;
+  height: 2px;
+  background: #b9baba ;
+  right: 0;
+  margin-top: 20px;
+}
+#actualites >.container>.row>.col-lg-12>h2:before {
+  display: inline-block ;
+  content: "" ;
+   width: 35%;
+  position: absolute ;
+  height: 2px;
+  background: #b9baba ;
+  left: 0;
+  margin-top: 20px;
+}
+}

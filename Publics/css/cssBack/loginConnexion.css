@@ -1,0 +1,133 @@
+
+body {
+  background: rbga(255,255,255,0.8) ;
+  font-family: Arial;
+  overflow: hidden;
+}
+#wrapper {
+  background: transparent;
+  opacity: 1;
+}
+.container {
+  max-width: 390px;
+}
+
+.content-logo {
+  display: inline-block ;
+  margin: 25px auto;
+  width: 100%;
+  position: relative ;
+  top: 70px;
+  z-index: 1 ;
+}
+.content-logo h1{
+   font-family:"Freestyle Script";
+  font-size: 48px;
+  font-weight: 900 ;
+ color: rgba(94,93,92,1);
+  text-shadow: 4px 4px 4px #7a495a;
+}
+.content-logo h1 img{
+  width: 120px ;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#menu-principal {
+  margin-top: 60px;
+}
+#pass_oublier a{
+  color: rgba(255,255,255,0.8) ;
+}
+
+.panel{
+  background: #59a5ec;
+  border-radius: 0px;
+  position: relative ;
+  top: 50px;
+  border-color: transparent ;
+}
+.panel-body {
+  padding: 30px;
+}
+
+.panel-heading h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #555;
+}
+
+label{
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffff;
+}
+
+.form-control , input{
+  padding: 5px;
+  height: 45px;
+  font-size: 24px;
+  font-weight: 500;
+  border: none ;
+  box-shadow: none ;
+  border-bottom: 1px solid grey ;
+  border-radius: 0px;
+  background: transparent ;
+   color: #ffff;
+   border-bottom: 1px solid rgba(255,255,255,0.7) ;
+ }
+.form-control:hover{
+  box-shadow: none ;
+}
+.form-control:focus{
+  box-shadow: none ;
+  border-bottom: 2px solid rgba(95,94,93,0.7) ;
+}
+
+.btn {
+  border-radius: 2px;
+}
+
+.panel-body .btn {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 0px;
+  background: rgba(71,70,69,0.9)  ;
+  border: none ;
+}
+.panel-body .btn:hover {
+  background-color: rgba(95,94,93,0.9)  ;
+  opacity: 0.9 ;
+}
+#infos {
+  padding: 10px 15px;
+  background: red ;
+  border-left: 0px solid red ;
+  transition : border-left 1s , background 1s;
+  color: #fff ;
+  border-radius: 0px;
+  display: none;
+}
+
+#infos p {
+  margin: 0;
+  font-size: 13px;
+}
+
+#submit {
+  margin-top: 30px;
+}
+
+#deconnexion {
+  padding: 15px;
+  text-align: right;
+}
+
+#deconnexion a {
+  color: #555;
+  text-decoration: none;
+}
+
+#deconnexion a:hover, #deconnexion a:active, #deconnexion a:focus {
+  color: #333;
+}

@@ -1,0 +1,435 @@
+header {
+  background: rgba(255,255,255,1);
+ 
+  position: fixed ;
+  width:100% ;
+  top: 0;left: 0;
+  height: 140px;
+  z-index: 1 ;
+  box-shadow: 0px 2px 1px #ccc;
+}
+
+nav {
+  display: flex ;
+  width: 1200px;
+  height: 100%;
+  margin: auto ;
+  justify-content: space-between ;
+  align-items: center ;
+}
+nav #div_logo {
+  width: 160px;
+}
+nav #div_logo  a,
+nav #div_logo  a  img{
+   width: 160px;
+}
+nav div#div_list_link {
+  width: 100%;
+}
+nav #div_list_link > ul {
+  margin: 0 ;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none ;
+  display: flex ;
+  justify-content: space-between ;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+}
+nav #div_list_link >ul >li{
+  text-align: center ;
+  display: block ;
+  width: 100%;
+}
+nav #div_list_link >ul> li> a{
+  text-decoration: none ;
+}
+
+nav #div_list_link >ul> li> a> span {
+  font-size: 13px;
+   color : #180be3;
+}
+span.fa-home {
+  font-size: 17px !important;
+}
+span.caret {
+  margin-left: 5px;
+}
+a:hover,a:visited {
+  text-decoration: none ;
+}
+
+nav .btn_toggle{
+  width: 160px;
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  height: 25px;
+ 
+}
+.slide_toggle_content > div > ul > li > a{
+    padding-bottom: 5px;
+  }
+nav .btn_toggle  button{
+  height: 25px;
+  padding: 0 ;
+  width: 35px;
+   background: blue;
+  border: none ;
+  border-radius:15px;
+  display: flex ;
+  justify-content: space-around ;
+  padding-left: 5px;
+  padding-right: 5px;
+  align-items: center ;
+  transition: all 0.5s linear ;
+  display: none ;
+}
+nav .btn_toggle span{
+  display: inline-block;
+  width: 5px ;
+  height: 5px;
+  background: white;
+  line-height: 1px !important;
+  border-radius: 50%;
+  transition: all 0.5s linear ;
+}
+nav .btn_toggle button:hover {
+  background: white ;
+  transition: all 0.5s linear ;
+  border : 1px solid blue ;
+}
+nav .btn_toggle:hover span{
+  background: blue ;
+  transition: all 0.5s linear ;
+}
+#div_list_link >div h2 {
+  margin: 0 ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center ;
+  color : #180be3 ;
+}
+
+div#div_form {
+ text-align: end ;
+  display: flex;
+  flex-direction: row-reverse ;
+}
+ #div_form{
+    padding-right: 15px;
+  }
+div#div_form form{ 
+ width: 50% ;
+  display: flex ;
+}
+div#div_form form input {
+  display: inline-block;
+  width: 90%;
+  background-color: transparent ;
+  border: none ;
+  border-bottom: 1px solid #180be3  ;
+ 
+  color : #180be3 ;
+}
+div#div_form form input:focus {
+   box-shadow: 0px 15px 10px -15px rgba(255,255,255) ;
+}
+div#div_form form button {
+  background-color: transparent ;
+  border: none ;
+  color : #180be3 ;
+}
+::placeholder {
+ color : #180be3 ;
+}
+
+.slide_toggle {
+  background: rgba(0,0,0,.8) ;
+  height: 230px;
+  position: absolute;
+  /*width: 100%;*/
+  width: 0%;
+  transition: all 0.5s linear ;
+}
+.slide_toggle p {
+  color:white ;
+  text-align: center ;
+}
+
+
+.mini_list {
+  display: none ;
+}
+.slide_toggle a.a_dismiss{
+  position: absolute ;
+  right: 15px;
+  top: 15px ;
+  display: none;
+}
+.slide_toggle a.a_dismiss span.fa{
+  font-size: 14px;
+  color: rgba(255,255,255,0.8) ;
+}
+
+.slide_toggle h3 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.5) ;
+  padding-bottom: 15px;
+  display: none;
+  transition: all 0.5s linear ;
+ 
+}
+.slide_toggle_content {
+  /*display: flex;*/
+  justify-content: space-around ;
+  margin-top: 15px;
+  display: none ;
+transition: all 0.5s linear ;
+}
+
+.slide_toggle_content >div {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: row ;
+  width: 100%;
+}
+.slide_toggle_content >div >ul {
+  display: block ;
+  width: 100%;
+  padding-left: 0px;
+  list-style: none;
+}
+.slide_toggle_content >div >ul >li {
+  text-align: center;
+}
+.slide_toggle_content >div >ul >li:not(:first-child) {
+  margin-top: 5px;
+}
+.slide_toggle_content >div >ul >li>a {
+  color: rgba(255,255,255,0.7) ;
+  display: inline-block ;
+  text-decoration: none;
+  width: 150px;
+  white-space: wrap ;
+border-bottom:1px solid rgba(255,255,255,0.8) ;
+}
+.slide_toggle_content >div >ul >li>a:hover {
+  border-color: rgba(255,255,255,0.5)
+}
+.div_ul_img {
+  height: 150px;
+}
+.div_ul_img img{
+  width: 200px;
+}
+
+@media all and (max-width: 1200px) {
+  nav {
+      width: 992px;
+  }
+  nav #div_list_link > ul > li > a{
+    font-size: 12px !important;
+  }
+  nav #div_list_link > ul {
+    flex-basis: auto ;
+    flex-grow: 1;
+  }
+  #div_logo img{
+    width: 120px !important;
+  }
+  nav #div_list_link > ul li:not(:first-child) >a {
+   display:inline-block ;
+    width: 120px;
+  }
+  nav #div_list_link > ul li:not(:first-child) >a span{
+    font-size: 12px !important;
+  }
+}
+
+@media all and (max-width: 992px) {
+  nav #div_list_link > ul li:not(:first-child) >a {
+   display:inline-block ;
+    width: 100px;
+  }
+  nav div#div_logo img{
+    width: 120px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  nav {
+      width: 768px;
+  }
+ 
+  nav #div_list_link > ul li:not(:first-child) >a span{
+    font-size: 10px !important;
+  }
+  nav #div_list_link > ul li:first-child{
+    width: 100px !important;
+  }
+  
+  #div_form form input,
+  #div_form form span.fa-search
+  {
+    font-size: 12px;
+  }
+  #div_list_link > div h2 {
+    font-size: 14px;
+  }
+  .slide_toggle h3{
+    font-size: 14px;
+  }
+  .slide_toggle a.a_dismiss{
+    top: 8px;
+  }
+  .slide_toggle_content > div > ul > li > a {
+     font-size: 12px;
+    width: 120px;
+  }
+  
+  
+  
+ 
+}
+
+
+@media all and (max-width: 768px) {
+ 
+  .slick-prev, .slick-next{
+    top :25%;
+  }
+  .slide_toggle {
+    margin-top: 15px;
+  }
+   nav div#div_logo img{
+    width: 110px !important;
+    position: static;
+    
+  }
+  #wrapper.container-fluid {
+    padding-top: 15px;
+  }
+  header {
+    height: auto ;
+    background: white ;
+    padding-bottom: 15px;
+  }
+  header a img {
+    position: relative;
+    bottom: 7px;
+  }
+  nav {
+   align-items: start ;
+    padding-top: 15px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    justify-content: center ;
+  }
+  nav .btn_toggle  button {
+    display: flex ;
+  }
+  nav #div_list_link > ul {
+    display: block;
+    height: auto;
+    padding-bottom: 10px;
+    display: none;
+    margin-left : auto ;
+    margin-right: auto ;
+    
+  }
+  nav #div_list_link > ul > li {
+    width: 75%;
+    margin-left: auto ;
+    margin-right: auto ;
+    padding-bottom: 2px;
+  }
+  nav #div_list_link > ul > li:not(:first-child) {
+    margin-top: 10px;
+  }
+  #div_list_link > div h2 {
+    font-size: 12px;
+  }
+  .mini_list {
+    display: none ;
+    list-style: none ;
+    padding-left: 0px ;
+    width: 75% ;
+    margin-left: auto ;
+    margin-right: auto ;
+    margin-bottom: 5px ;
+    
+  }
+  .mini_list li {
+    border-bottom: 1px solid #180be3 ;
+  }
+  .mini_list li a {
+    color: #180be3 ;
+    font-size: 11px;
+  }
+  div#div_form {
+    flex-direction: row ;
+    justify-content: space-around ;
+  }
+  div#div_form form input {
+    width: 100% !important;
+    
+  }
+  div#div_form form  {
+  justify-content: center ;
+    flex-direction: row-reverse;
+    width: 90%;
+  }
+  div#div_form form span.fa {
+    transform: rotateY(180deg) ;
+  }
+  
+  
+  
+  
+}
+@media all and (max-width: 480px) {
+  div#div_form form  {
+    width: 100%;
+  }
+  .slide_toggle {
+    transition: all 0.2s linear;
+}
+  
+  #div_list_link > div h2 {
+    font-size: 12px;
+    margin-top: 50px;
+    line-height: 20px;
+  }
+  
+  .slide_toggle_content {
+    flex-direction: column !important;
+  }
+  .slide_toggle_content > div > ul {
+    border-bottom: 1px solid rgba(255,255,255,0.8);
+    width: 90%;
+    padding-bottom: 15px;
+  }
+  .slide_toggle_content > div > ul:last-child {
+    padding-top: 15px;
+  }
+  .slide_toggle_content > div > ul > li > a {
+    width: auto;
+  }
+  .slide_toggle {
+    height: auto ;
+  }
+}
+
+
+
+
+
